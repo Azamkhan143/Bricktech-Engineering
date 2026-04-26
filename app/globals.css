@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand Colors */
+  --color-brand-orange: #e8611a;
+  --color-brand-dark: #1a1208;
+  --color-brand-brown: #3d2b1f;
+  --color-brand-tan: #c4a882;
+  --color-brand-cream: #f5efe6;
+  --color-brand-steel: #2c3e50;
+
+  /* Brand Fonts */
+  --font-heading: "Geist", serif;
+  --font-body: "Geist Sans", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* --- Base Styles --- */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-brand-cream text-brand-dark font-body antialiased;
+}
+
+/* --- Scroll Reveal Animations --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Service Card Styles --- */
+@layer components {
+  .service-card {
+    @apply bg-white border border-brand-tan/20 p-10 
+           transition-all duration-500 hover:-translate-y-2 
+           hover:shadow-[0_20px_50px_rgba(232,97,26,0.12)];
+  }
+
+  .service-card-title {
+    /* Explicitly use brand-dark to fix the 'washed out' look */
+    @apply font-heading text-2xl font-bold text-brand-dark mb-3;
+  }
+
+  .service-card-desc {
+    @apply text-brand-dark/70 text-sm leading-relaxed mb-6;
+  }
+
+  /* Utility classes for your buttons */
+  .btn-primary {
+    @apply bg-brand-orange text-white px-8 py-4 font-bold uppercase tracking-wide text-sm 
+           hover:bg-brand-brown transition-all duration-300 inline-block;
+  }
 }
