@@ -115,3 +115,13 @@ export default function GalleryPage(): JSX.Element {
     </main>
   )
 }
+
+export const metadata = {
+  title: "Bricktech Engineering",
+  description: "Construction services",
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+}
