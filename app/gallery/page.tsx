@@ -1,21 +1,9 @@
-
+'use client'
 
 import NextImage from 'next/image'
 import React, { useState } from 'react'
 import ScrollReveal from '../components/ScrollReveal'
 import { JSX } from 'react/jsx-dev-runtime';
-import { Metadata } from 'next'
-import { Viewport } from 'next'
-
-export const metadata: Metadata = {
-  title: 'BrickTech Engineering',
-  description: 'Construction services',
-}
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-}
 
 // 1. Define the categories as a literal type for better type safety
 type Category = 'All' | 'Flooring' | 'Waterproofing' | 'Swimming Pool';

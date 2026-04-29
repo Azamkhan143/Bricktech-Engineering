@@ -2,7 +2,6 @@
 import { useState, useEffect, JSX } from 'react'
 import Link from 'next/link'
 
-
 // 1. Define the shape of a Service object
 interface ServiceItem {
   name: string;
@@ -17,8 +16,7 @@ const services: ServiceItem[] = [
   { name: 'Swimming Pool', href: '/services/swimming-pool' },
 ]
 
-// Navbar.tsx
-export default function Navbar() : JSX.Element {
+export default function Navbar(): JSX.Element {
   // TypeScript automatically infers 'boolean' for these states
   const [scrolled, setScrolled] = useState<boolean>(false)
   const [menuOpen, setMenuOpen] = useState<boolean>(false)

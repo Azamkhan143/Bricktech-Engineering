@@ -1,15 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import ScrollReveal from '@/app/components/ScrollReveal'
-import { JSX, JSX } from 'react'
-import { Viewport } from 'next'
-
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-}
+import ScrollReveal from './components/ScrollReveal'
+import { JSX } from 'react/jsx-dev-runtime'
 
 type Service = {
   icon: string
@@ -188,3 +181,4 @@ export default function HomePage(): JSX.Element {
     </>
   )
 }
+

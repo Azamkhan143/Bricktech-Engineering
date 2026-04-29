@@ -1,17 +1,5 @@
 import Link from 'next/link'
 import ScrollReveal from '../components/ScrollReveal'
-import { Metadata } from 'next'
-import { Viewport } from 'next'
-
-export const metadata: Metadata = {
-  title: 'BrickTech Engineering',
-  description: 'Construction services',
-}
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-}
 
 // 1. Define Interfaces for our data structures
 interface Service {
@@ -364,4 +352,14 @@ export default function HomePage() {
       </section>
     </>
   )
+}
+
+export const metadata = {
+  title: "Bricktech Engineering",
+  description: "Construction services",
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
