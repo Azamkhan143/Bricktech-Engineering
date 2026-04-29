@@ -1,8 +1,15 @@
 'use client'
 
 import Link from 'next/link'
-import ScrollReveal from './components/ScrollReveal'
-import { JSX } from 'react/jsx-dev-runtime'
+import ScrollReveal from '@/app/components/ScrollReveal'
+import { JSX, JSX } from 'react'
+import { Viewport } from 'next'
+
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 type Service = {
   icon: string
@@ -180,14 +187,4 @@ export default function HomePage(): JSX.Element {
       </section>
     </>
   )
-}
-
-export const metadata = {
-  title: "Bricktech Engineering",
-  description: "Construction services",
-}
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
 }

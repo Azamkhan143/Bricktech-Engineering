@@ -1,7 +1,14 @@
 import Link from 'next/link'
 import ScrollReveal from '../components/ScrollReveal'
-import { Metadata } from 'next'
 import { JSX } from 'react/jsx-dev-runtime';
+import { Metadata } from 'next'
+import { Viewport } from 'next'
+
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 // 1. Defining the Metadata type for SEO
 export const metadata: Metadata = {
@@ -178,12 +185,3 @@ export default function AboutPage(): JSX.Element {
   )
 }
 
-export const metadata = {
-  title: "Bricktech Engineering",
-  description: "Construction services",
-}
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-}

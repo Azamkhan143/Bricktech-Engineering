@@ -1,6 +1,18 @@
 import React from 'react'
 import Link from 'next/link'
 import ScrollReveal from '@/app/components/ScrollReveal'
+import { Metadata } from 'next'
+import { Viewport } from 'next'
+
+export const metadata: Metadata = {
+  title: 'BrickTech Engineering',
+  description: 'Construction services',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export default function ServicePage() {
   return (
@@ -70,12 +82,3 @@ export default function ServicePage() {
   )
 }
 
-export const metadata = {
-  title: "Bricktech Engineering",
-  description: "Construction services",
-}
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-}

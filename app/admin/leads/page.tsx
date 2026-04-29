@@ -1,5 +1,17 @@
 import { Lead } from "../../models.leads"; // or "@/app/models/Lead"
 import mongoose from 'mongoose';
+import { Metadata } from 'next'
+import { Viewport } from 'next'
+
+export const metadata: Metadata = {
+  title: 'BrickTech Engineering',
+  description: 'Construction services',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export default async function AdminLeadsPage() {
   // 1. Connect to MongoDB (Always check state first)
@@ -56,13 +68,3 @@ export default async function AdminLeadsPage() {
 }
 
 export const dynamic = "force-dynamic";
-
-export const metadata = {
-  title: "Bricktech Engineering",
-  description: "Construction services",
-}
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-}

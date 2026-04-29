@@ -2,6 +2,12 @@
 
 import React, { useState, ChangeEvent, FormEvent, JSX } from 'react'
 import ScrollReveal from '../components/ScrollReveal'
+import { Viewport } from 'next'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 // 1. Define the shape of our form data
 interface FormData {
@@ -184,14 +190,4 @@ export default function ContactPage(): JSX.Element {
       </section>
     </main>
   )
-}
-
-export const metadata = {
-  title: "Bricktech Engineering",
-  description: "Construction services",
-}
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
 }
