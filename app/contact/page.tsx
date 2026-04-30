@@ -71,8 +71,8 @@ export default function ContactPage(): JSX.Element {
               <div className="bg-brand-dark p-8 text-white group hover:bg-brand-brown transition-all duration-300">
                 <div className="text-brand-orange text-2xl mb-4 font-bold font-heading uppercase tracking-tighter">Location</div>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Graphic Era University Area,<br />
-                  Dehradun, Uttarakhand, India
+                  Golcha Compound, Tanakpur Road<br />
+                  Haldwani, Uttarakhand, India
                 </p>
               </div>
             </ScrollReveal>
@@ -80,7 +80,7 @@ export default function ContactPage(): JSX.Element {
             <ScrollReveal delay={200}>
               <div className="bg-white border border-brand-tan/20 p-8 group transition-all duration-300 hover:border-brand-orange">
                 <div className="text-brand-orange text-2xl mb-4 font-bold font-heading uppercase tracking-tighter">Call Us</div>
-                <p className="text-brand-dark font-bold text-lg">+91 98765 43210</p>
+                <p className="text-brand-dark font-bold text-lg">+91 7668815564</p>
                 <p className="text-gray-500 text-[10px] mt-2 uppercase tracking-[0.2em] font-bold">Mon - Sat: 9am - 7pm</p>
               </div>
             </ScrollReveal>
