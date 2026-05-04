@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import ScrollReveal from './components/ScrollReveal'
-import { JSX } from 'react/jsx-dev-runtime'
+import { JSX } from 'react'
 
 type Service = {
   icon: string
@@ -97,6 +97,7 @@ const testimonials: Testimonial[] = [
 export default function HomePage(): JSX.Element {
   return (
     <>
+
       {/* HERO */}
       <section className="relative min-h-screen bg-brand-dark flex items-center overflow-hidden">
         <div
@@ -159,6 +160,35 @@ export default function HomePage(): JSX.Element {
           </div>
         </div>
       </section>
+
+      {/* WHY US SECTION - Add this here */}
+<section className="py-24 bg-brand-dark text-white">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose BrickTech?</h2>
+      <p className="text-white/60 max-w-2xl mx-auto">
+        We combine technical expertise with high-quality materials to deliver 
+        construction solutions that stand the test of time.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {whyUs.map((item: WhyUsItem, i: number) => (
+        <ScrollReveal key={item.title} delay={i * 100}>
+          <div className="group p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-brand-orange/10 hover:border-brand-orange/50 transition-all duration-300">
+            <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
+              {item.icon}
+            </div>
+            <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+            <p className="text-sm text-white/60 leading-relaxed">
+              {item.desc}
+            </p>
+          </div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* TESTIMONIALS */}
       <section className="py-24 bg-white">

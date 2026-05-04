@@ -80,7 +80,7 @@ export default function ContactPage(): JSX.Element {
             <ScrollReveal delay={200}>
               <div className="bg-white border border-brand-tan/20 p-8 group transition-all duration-300 hover:border-brand-orange">
                 <div className="text-brand-orange text-2xl mb-4 font-bold font-heading uppercase tracking-tighter">Call Us</div>
-                <p className="text-brand-dark font-bold text-lg">+91 7668815564</p>
+                <p className="text-brand-dark font-bold text-lg">+91 9653761550</p>
                 <p className="text-gray-500 text-[10px] mt-2 uppercase tracking-[0.2em] font-bold">Mon - Sat: 9am - 7pm</p>
               </div>
             </ScrollReveal>
@@ -88,7 +88,7 @@ export default function ContactPage(): JSX.Element {
             <ScrollReveal delay={300}>
               <div className="bg-white border border-brand-tan/20 p-8 transition-all duration-300 hover:border-brand-orange">
                 <div className="text-brand-orange text-2xl mb-4 font-bold font-heading uppercase tracking-tighter">Email</div>
-                <p className="text-brand-dark font-bold text-lg">info@bricktech.com</p>
+                <p className="text-brand-dark font-bold text-lg">Bricktechservices@gmail.com</p>
                 <p className="text-gray-500 text-[10px] mt-2 uppercase tracking-[0.2em] font-bold">Response within 24 hours</p>
               </div>
             </ScrollReveal>
@@ -111,7 +111,7 @@ export default function ContactPage(): JSX.Element {
                         value={formData.fullName}
                         onChange={handleChange}
                         required
-                        placeholder="Anujkumar Yadav"
+                        placeholder=""
                         className="w-full bg-brand-cream border border-brand-tan/20 p-4 outline-none focus:border-brand-orange transition-colors text-brand-dark text-sm"
                       />
                     </div>

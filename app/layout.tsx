@@ -40,8 +40,8 @@ export default function RootLayout({ children }: RootLayoutProps): React.JSX.Ele
         
         <main className="flex-grow">
           {children}
+          
         </main>
-
         <Footer />
       </body>
     </html>
