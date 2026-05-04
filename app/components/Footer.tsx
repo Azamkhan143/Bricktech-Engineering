@@ -96,15 +96,15 @@ export default function Footer(): React.JSX.Element {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-brand-orange mt-0.5" aria-hidden="true">📍</span>
-                <span className="text-white/60 text-sm">123, Construction Hub, Industrial Area, India</span>
+                <span className="text-white/60 text-sm">Golcha Compound, Tanakpur Road, Haldwani</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-brand-orange" aria-hidden="true">📞</span>
-                <a href="tel:+917668815564" className="text-white/60 hover:text-brand-orange text-sm transition-colors">+91 7668815564</a>
+                <a href="tel:+919653761550" className="text-white/60 hover:text-brand-orange text-sm transition-colors">+91 9653761550</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-brand-orange" aria-hidden="true">✉️</span>
-                <a href="mailto:info@bricktechengineering.com" className="text-white/60 hover:text-brand-orange text-sm transition-colors">info@bricktechengineering.com</a>
+                <a href="mailto:Bricktechservices@gmail.com" className="text-white/60 hover:text-brand-orange text-sm transition-colors">Bricktechservices@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-brand-orange" aria-hidden="true">🕒</span>
